@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+:root{
+    --purple: #6377EE;
+    --black: #3B3B3B;
+    --content-grey: #848484;
+    --bgd-white: #FFFFFF;
+    --sans: 'Poppins', sans-serif;
+    --fw-small: 300;
+    --fw-medium: 600;
+    --fw-large: 700;
+    --fs-small: 1.6rem;
+    --fs-medium: 2rem;
+    --fs-large: 4.8rem;
+    --lh-small:2.8rem;
+    --lh-medium: 5.4rem;
+    --lh-large: 6.4rem;
+    --margin: 9rem;
+    --margin-sm: 5rem;
+}
+html {
+    font-size: 62.5%; /*10px*/
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* generic styles for the page */
+
+body {
+    font-family: var(--sans);
+    color: var(--content-grey);
+    background-color: var(--bgd-white);
+    font-size: var(--fs-small);
+    line-height: var(--lh-small);
+  }
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.center-container{
+  position: relative;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a, button{
+  cursor: pointer;
+}
+  /* a {.
+    color: var(--magenta);
+  }
+  
+  a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+  } */
+
+
+
+/*------------------- Styling the header and nav ---------------------------*/
+header .navbar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-temlate-rows: auto;
+  margin: 3rem var(--margin); 
+}
+
+.navbar ul{
+  list-style-type: none;
+  display: inline-flex;
+  margin-right: var(--margin-sm);
+  margin-left: auto;
+  margin-bottom: 0.6rem;
+  margin-top: auto;
+}
+.navbar ul li{
+  /* display: inline-b; */
+  padding: 0 1rem;
+}
+.navbar ul li a{
+  /* display: inline-b; */
+  padding: 0 1rem;
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-medium);
+  color: var(--black)
+}
+.navbar ul li a.active{
+  color: var(--purple);
+}
+
+/*-------------------- Styling intro and about ------------------------------*/
+  .intro, .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: var(--margin);
+    /* padding-bottom: var(--margin); */
+  }
+  .col-2{
+    grid-row: span 1; 
+  }
+
+  /* .about-img-container{
+    width: 30rem;
+    height: 20rem;
+  }
+  .intro-img-container{
+    width: 52rem;
+    height: 55rem;
+  } */
+  .intro article{
+    margin: 0 auto;
+    padding-top: 28%;
+    padding-right: 2rem;
+    padding-left: var(--margin);
+    /* padding-left: ; */
+  }
+  .intro article h2{
+   font-size: var(--fs-large);
+   color: var(--black);
+   line-height: var(--lh-large);
+   padding-bottom: 3rem; 
+  }
+  .intro article h2 span{
+    color: var(--purple);
+  }
+  .intro article p{
+    padding-right: 4rem;
+  }
+  .intro figure{
+    margin: auto auto;
+  }
+  .about article{
+    padding-left: var(--margin-sm);
+    padding-right: var(--margin-sm);
+  }
+  .about{
+    padding-top: var(--margin);
+  }
+  .about .about-img-container{
+    margin:auto auto;
+  }
+  .about article h2{
+    font-size: var(--fs-medium);
+    color: var(--purple);
+    font-weight: var(--fw-medium);
+    padding-bottom: 1.5rem;
+  }
+  .about article h3{
+    font-size: 3.5rem;
+    font-weight: var(--fw-medium);
+    color: var(--black);
+    line-height: var(--lh-medium);
+    padding-bottom: 3rem;
+  }
